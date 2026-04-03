@@ -15,3 +15,8 @@ This repository contain all the data analysis project , relate to the loan pogre
 ## 🛠 Technologies
 - Microsoft SQL Server (T-SQL)
 - Power BI
+
+## 📌 How to Use
+1. Clone this repository
+2. Open each project folder
+3. Follow the README inside each project
