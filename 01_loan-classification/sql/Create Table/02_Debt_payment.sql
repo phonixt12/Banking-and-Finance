@@ -1,10 +1,11 @@
-CREATE TABLE [dbo].[KHACHHANG_TRANO](
-	[DEBID] [nvarchar](20) NULL,
-	[KY] [int] NULL,
-	[NGAYTRA] [date] NULL,
-	[TRAGOC] [numeric](18, 2) NULL,
-	[TRALAI] [numeric](18, 2) NULL,
-	[TONGTIEN] [numeric](18, 2) NULL
+CREATE TABLE [dbo].[KHACHHANG_TRANO] -- Customer Payment History 
+(
+	[DEBID] [nvarchar](20) NULL, -- Credit ID
+	[KY] [int] NULL, -- Term number
+	[NGAYTRA] [date] NULL, -- Payment Date
+	[TRAGOC] [numeric](18, 2) NULL, -- Principal Amount
+	[TRALAI] [numeric](18, 2) NULL, -- Interest Amount
+	[TONGTIEN] [numeric](18, 2) NULL -- Total Payment
 )
 
 -------------------------------------

@@ -1,15 +1,16 @@
-CREATE TABLE [dbo].[LOP6_KEHOACH](
-	[MAHDTD] [nvarchar](50) NULL,
-	[KY] [int] NULL,
-	[DUNOGOC] [numeric](18, 0) NULL,
-	[NGAYDAUKI] [date] NULL,
-	[NGAYCUOIKI] [date] NULL,
-	[SONGAYTINHLAI] [int] NULL,
-	[GOC_PHAITRA] [numeric](18, 0) NULL,
-	[LAI_PHAITRA] [numeric](18, 0) NULL,
-	[TONGTIEN] [numeric](18, 0) NULL
+CREATE TABLE [dbo].[LOP6_KEHOACH] -- Payment Plan
+(
+	[MAHDTD] [nvarchar](50) NULL, -- Credit Contract ID
+	[KY] [int] NULL, -- Term Number
+	[DUNOGOC] [numeric](18, 0) NULL, -- Principal Balance
+	[NGAYDAUKI] [date] NULL, -- Period Start Date
+	[NGAYCUOIKI] [date] NULL, -- Period End Date
+	[SONGAYTINHLAI] [int] NULL, -- Interst Caculation Date
+	[GOC_PHAITRA] [numeric](18, 0) NULL, -- Principal Due
+	[LAI_PHAITRA] [numeric](18, 0) NULL, -- Interest Due
+	[TONGTIEN] [numeric](18, 0) NULL -- Total Paymnet
 )
----------- TAO THU TUC --------------
+---------- Create Produce --------------
 -------------------------------------
 
 
@@ -56,7 +57,7 @@ END
 
 -----------------------------------------------------------------
 -----------------------------------------------------------------
--- chay con tro ---
+-- Run Cursor ---
 
 declare @mahdtd nvarchar(20);
 declare cur_hdtd	cursor for
