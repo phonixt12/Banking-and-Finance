@@ -21,6 +21,7 @@ based on overdue days, following SBV standards.
 - Power BI
 
 ## How to Run
-1. Run `sql/01_create_tables.sql`
+1. Create Database
+  1.1  `sql/01_Credit_Plan.sql` -- 
 2. Run `sql/02_classification.sql`
 3. Open `powerbi/dashboard.pbix`
